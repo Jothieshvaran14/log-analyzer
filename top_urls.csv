@@ -1,0 +1,10 @@
+url,count,cluster,anomaly
+/missing,65,0,False
+/static/js/app.js,63,0,False
+/dashboard,62,0,False
+/hello,59,0,False
+/api/data,58,0,False
+/login,55,0,False
+/favicon.ico,53,0,False
+/,43,1,True
+/logout,42,1,True

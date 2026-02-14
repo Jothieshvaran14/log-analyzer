@@ -25,9 +25,9 @@ df = pd.DataFrame(data)
 print("Parsed DataFrame columns:", df.columns)
 
 if df.empty:
-    print("❌ No valid logs parsed. Check access.log format.")
+    print("No valid logs parsed. Check access.log format.")
     exit()
-
+    
 # Timestamp formatting
 df["timestamp"] = pd.to_datetime(df["timestamp"], format="%d/%b/%Y:%H:%M:%S %z", errors="coerce")
 df["timestamp"] = df["timestamp"].dt.tz_localize(None)
@@ -84,5 +84,5 @@ summary = {
 }
 pd.DataFrame([summary]).to_csv("anomaly_summary.csv", index=False)
 
-print("✅ Log parsing and ML enrichment complete.")
+print("Log parsing and ML enrichment complete.")
 
